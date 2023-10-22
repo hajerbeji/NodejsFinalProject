@@ -1,0 +1,592 @@
+
+
+/* -------------------------------landing page---------------------------------- */
+.landingpage{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  .nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav img{
+    width: 120px;
+    height: 60px;
+    margin-left: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .nav span{
+    display: flex;
+    gap: 20px;
+    margin-right: 60px;
+  }
+  .nav span button{
+    font-size: 22px;
+    font-weight: 400;
+    background-color: transparent;
+    color: rgb(69, 69, 69);
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav span button:hover{
+    transform: scale(1.1);
+    color: orange;
+    border-bottom: 2px solid rgb(69, 69, 69);
+  }
+
+  .sous_nav{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin: 30px;
+  }
+  .sous_nav div{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 120px;
+    text-align: center;
+  }
+  .sous_nav div span h1{
+    color: rgb(69, 69, 69);
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .sous_nav div span p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .sous_nav .sous_nav_img{
+    height: 500px;
+    margin-bottom: 90px;
+    border: 5px solid orange;
+    box-shadow: 0 10px 25px black;
+    border-radius: 20px;
+  }
+}
+/* -------------------------------End landing page---------------------------------- */
+
+
+/* -------------------------------Login and signUp---------------------------------- */
+.login{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*2GMcXj40PC2WIJHZit1OiA.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .form{
+    background-color: rgba(0, 0, 0, 0.734);
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .form span{
+    display: flex;
+    flex-direction: column;
+  }
+  .form span label{
+    font-size: 20px;
+    color: #fff;
+  }
+  .form span input{
+    width: 470px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(61, 60, 60);
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  .form div{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+    margin-left: -320px;
+  }
+  .form div input{
+    width: 20px;
+    height: 20px;
+  }
+  .form button{
+    width: 80%;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .form button:hover{
+    transform: scale(1.1);
+    background-color: rgba(58, 9, 9, 0.641);
+    color: #fff;
+  }
+}
+/* -------------------------------End Login and signUp---------------------------------- */
+
+/* -------------------------------One card css---------------------------------- */
+.big_box_model{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.637);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 99 !important;
+}
+.box_model{
+  display: flex;
+  width: 48%;
+  background-color: #fff;
+  padding: 20px;
+  gap: 20px;
+  .img{
+    width: 45%;
+  }
+  .description{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  .description .btnnn{
+    display: flex;
+    align-items: baseline;
+    gap: 10px ;
+  }
+  .description .heart{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    margin-left: 270px;
+    cursor: pointer;
+  }
+  .description .clicked{
+    color: red;
+  }
+  .description .heart:hover{
+    transform: scale(1.1);
+  }
+  .description .cancel{
+    width: 25px;
+    display: flex;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .description .cancel:hover{
+    transform: scale(1.1);
+    color: red;
+  }
+  .description span{
+    margin-top: -55px;
+    
+  }
+  .description span h1{
+    color: chocolate;
+    font-size: 35px;
+  }
+  .description span h2{
+    color: rgba(210, 105, 30, 0.729);
+    font-size: 25px;
+  }
+  .description span p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .description .sous_btnnn{
+    margin-top: -30px;
+  }
+  .description .rating{
+    margin-top: -25px;
+  }
+}
+.heart{
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+.clicked{
+  color: red;
+}
+.heart:hover{
+  transform: scale(1.1);
+}
+/* -------------------------------End card---------------------------------- */
+
+/* -------------------------------List---------------------------------- */
+.navbar{
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+.navbar div{
+  margin-right: 250px;
+  margin-top: 15px;
+  font-size: 35px;
+  display: flex;
+  gap: 20px;
+}
+.navbar div .icon{
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+.navbar div .searchinput{
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 25px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 3px solid black;
+}
+.navbar div .icon:hover{
+  background-color: chocolate;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px black;
+}
+.navbar img{
+  margin-top: 10px;
+  margin-left: 160px;
+  width: 120px;
+  height: 60px;
+  cursor: pointer;
+}
+.booklist{
+  .list{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 90px;
+  }
+}
+.onebook{
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 10px 25px black;
+  width: 350px;
+  height: 490px;
+}
+.onebook img{
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.544);
+  cursor: pointer;
+}
+.onebook section{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.onebook section .title{
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+.onebook section span{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.onebook section span h3{
+  font-size: 25px;
+  color: gold;
+}
+
+/* -------------------------------End List--------------------------------- */
+
+
+/* -------------------------------Plus Modal--------------------------------- */
+.plus_modal{
+  background-color: rgba(0, 0, 0, 0.612);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 111;
+  top: -17px;
+  left: 0;
+  bottom: 0;
+  .plus_modal_box{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 40%;
+    padding: 30px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+  }
+  .plus_modal_box span{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .plus_modal_box span input{
+    outline: none;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.39);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.434);
+  }
+  .plus_modal_box span input:hover{
+    transform: scale(1.05);
+  }
+  .btnss{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .btnss button{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .btnss button:hover{
+    transform: scale(1.1);
+  }
+  .btnss .cancel{
+    background-color: rgba(255, 0, 0, 0.614);
+    margin-right: 200px;
+    margin-left: 230px;
+  }
+  .btnss .cancel:hover{
+    box-shadow: 0 15px 25px rgba(255, 0, 0, 0.671);
+  }
+  .btnss .confirm{
+    background-color: rgba(22, 22, 238, 0.477);
+  }
+  .btnss .confirm:hover{
+    box-shadow: 0 15px 25px rgba(0, 0, 255, 0.612);
+  }
+}
+/* -------------------------------End Plus Modal--------------------------------- */
+
+
+/* -------------------------------Authentification--------------------------------- */
+.box_authentif{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.627);
+  top: 0;
+  bottom: 0;
+  .authentif{
+    background-color: #fff;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .authentif .head{
+    height: 40px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.396);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 30px;
+  }
+  .authentif .head h4{
+    font-weight: 350;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  .authentif .head .x{
+    margin-right: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff ;
+  }
+  .authentif .head .x:hover{
+    color: red;
+  }
+  .authentif p{
+    font-size: 20px;
+  }
+  .authentif .btnsss{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+  }
+  .authentif .btnsss button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  .authentif .btnsss .btnsss1{
+    background-color: rgba(255, 0, 0, 0.57);
+  }
+  .authentif .btnsss .btnsss2{
+    background-color: rgba(0, 0, 255, 0.571);
+  }
+  .authentif .btnsss .btnsss1:hover{
+    transform: scale(1.1);
+  }
+  .authentif .btnsss .btnsss2:hover{
+    transform: scale(1.1);
+  }
+}
+/* -------------------------------End Authentification--------------------------------- */
+
+
+/* -------------------------------Searching--------------------------------- */
+.search_box{
+  background-color: rgba(0, 0, 0, 0.729);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 111;
+  top: -17px;
+  left: 0;
+  bottom: 0;  
+  .searching{
+    margin-left: 180px;
+    width: 40%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .searching .cancel{
+    background-color: rgba(255, 0, 0, 0.578);
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+  }
+  .searching .cancel button{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .searching .input{
+    margin: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .searching .input label{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .searching .input input{
+    width: 70%;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    margin-left: 72px;
+  }
+  .searching .search{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+  }
+  .searching .search button{
+    font-size: 25px;
+    border: none ;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .searching .search button:hover{
+    transform: scale(1.1);
+  }
+}
+/* -------------------------------End Searching--------------------------------- */
+.favouriscomponent{
+  display: flex;
+  flex-direction: column;
+}
+
+.favouriscomponent span{
+  
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
