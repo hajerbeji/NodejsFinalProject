@@ -104,6 +104,10 @@ try {
       res.status(500).json({ error: 'Error while fetching liked books' });
     }
   });
+
+  app.use((req,res)=> {
+    res.send('API is running')
+  })
   
   
 
